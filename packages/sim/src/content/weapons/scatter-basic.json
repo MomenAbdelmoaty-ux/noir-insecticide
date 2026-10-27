@@ -1,0 +1,18 @@
+{
+  "id": "scatter-basic",
+  "name": "Basic Shotgun",
+  "class": "ranger",
+  "archetype": "scatter",
+  "stats": {
+    "damage": 6,
+    "attacksPerSecond": 1.2,
+    "durabilityPerUse": 1,
+    "params": { "pelletCount": 7, "spreadDegrees": 24, "projectileSpeed": 28 }
+  },
+  "ability": {
+    "id": "recoil-dash",
+    "cooldownSeconds": 3,
+    "durabilityPerUse": 3,
+    "params": { "impulse": 18 }
+  }
+}

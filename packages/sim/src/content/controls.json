@@ -1,0 +1,12 @@
+{
+  "moveLeft": ["KeyA"],
+  "moveRight": ["KeyD"],
+  "jump": ["KeyW", "Space"],
+  "crouch": ["KeyS"],
+  "shift": ["ShiftLeft"],
+  "swapWeapon": ["KeyQ"],
+  "interact": ["KeyE"],
+  "openSettings": ["Escape"],
+  "useWeapon": ["MouseLeft"],
+  "useAbility": ["MouseRight"]
+}

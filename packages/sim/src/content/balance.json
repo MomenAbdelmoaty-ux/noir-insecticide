@@ -1,0 +1,22 @@
+{
+  "shift": { "cooldownSeconds": 0.4 },
+  "health": {
+    "maxHealth": 8,
+    "immunitySeconds": 1,
+    "repositionDistance": 6,
+    "freezeRampSeconds": 0.25,
+    "resumeRampSeconds": 0.35
+  },
+  "movement": {
+    "runSpeed": 8,
+    "crouchSpeedMultiplier": 0.5,
+    "jumpHeightMin": 1.5,
+    "jumpHeightMax": 3.5,
+    "doubleJumps": 1,
+    "wallJumps": 1,
+    "wallSlideSpeed": 2,
+    "fastFallGravityMultiplier": 2.5,
+    "coyoteTimeSeconds": 0.1,
+    "jumpBufferSeconds": 0.1
+  }
+}

@@ -1,0 +1,39 @@
+{
+  "name": "noir-insecticide",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MomenAbdelmoaty-ux/noir-insecticide.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MomenAbdelmoaty-ux/noir-insecticide/issues"
+  },
+  "homepage": "https://github.com/MomenAbdelmoaty-ux/noir-insecticide#readme",
+  "private": "true",
+  "type": "module",
+  "workspaces": [
+    "packages/sim",
+    "packages/client"
+  ],
+  "devDependencies": {
+    "typescript": "^7.0.2",
+    "vite": "^8.3.5",
+    "vitest": "^5.0.5"
+  },
+  "scripts": {
+    "dev": "npm run dev -w packages/client",
+    "build": "npm run build -w packages/client",
+    "test": "vitest run",
+    "typecheck": "tsc -p packages/sim --noEmit && tsc -p packages/client --noEmit"
+  }
+}
+  
+
