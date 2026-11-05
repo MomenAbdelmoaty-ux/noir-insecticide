@@ -5,7 +5,7 @@
 
 ## Context
 
-Player shots need to stay readable on every background, and they interact with the black and white rule like everything else.
+Player shots need to stay readable on every background, and they interact with the Black and White rule like everything else.
 
 ## Decision
 
@@ -17,5 +17,5 @@ The shifting trick becomes possible: a projectile can pass through a wall that e
 
 ## Alternatives considered
 
-- **Projectiles with a world color (black/white).** Originally considered making the player bullets themselves background-conditional as well, however it makes gameplay unintuitive, less satisfying, and also make less sense since the bullets realistically should match the same layer as the player at all times. Keeping the projectiles readable and permanently on-screen simply feels better for the player.
-- **Projectiles as gray.** This is closest to something pre-existing. Gray is visible on both main backgrounds. But Gray things touch everything, so your shots would hit things you cannot currently touch, which breaks the rule that they only affect what you could touch. They also are not easily visible as gray, and should match the color of the player and his/her weapons.
+- **Projectiles with a world color (Black/White).** Originally considered making the player bullets themselves background-conditional as well, however it makes gameplay unintuitive, less satisfying, and also make less sense since the bullets realistically should match the same layer as the player at all times. Keeping the projectiles readable and permanently on-screen simply feels better for the player.
+- **Projectiles as Gray.** This is closest to something pre-existing. Gray is visible on both main backgrounds. But Gray things touch everything, so your shots would hit things you cannot currently touch, which breaks the rule that they only affect what you could touch. They also are not easily visible as Gray, and should match the color of the player and his/her weapons.
