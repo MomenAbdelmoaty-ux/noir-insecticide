@@ -4,7 +4,7 @@ Each use case is a player scenario with a pass condition and the requirements it
 
 | Identifier | Use case | Pass condition | Requirements |
 |---|---|---|---|
-| usecase-001 | Traverse the level | The player runs, jumps, double jumps, wall jumps, and reaches the door | movement-001 to movement-010 |
+| usecase-001 | Traverse the level | The player runs, jumps (short hop and full jump), double jumps, crouches and fast falls, climbs ladders, slides down and jumps off walls, and reaches the door | movement-001 to movement-010 |
 | usecase-002 | Shift the background | Shifting works only on the button; intangible things stop interacting; the cooldown holds | shifting-001 to shifting-006 |
 | usecase-003 | Mistime a shift | The shift icon greys out when a shift would trap the player; if attempted, the shift is refused and still starts the cooldown | shifting-007, shifting-016 |
 | usecase-004 | Phase a projectile through a wall | A projectile survives a shift pair through a one-color wall, and is destroyed if trapped inside | shifting-008, shifting-009 |
