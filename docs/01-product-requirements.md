@@ -4,7 +4,7 @@
 
 Noir Insecticide is a two-dimensional roguelike platformer about decimating a horde before it gets a chance to decimate you. The player is the Exterminator, a vigilante-for-hire who must run, climb, and fight through large, elaborate rooms while an endless insect horde follows close behind them. The player kills enough bugs to reach a quota, unlocks a door at the edge of a dead end, and advances to a harder stage, or they die trying from the countless traps and the ever-growing swarm. The Exterminator must survive through several stages to reach the final boss, the Queen, and end the swarm once and for all.
 
-## Why this roguelike?
+## Purpose / What sets it apart
 
 1. **Difficulty comes from skill, not from numbers.** In most roguelikes, difficulty and weapon power both rise as numbers, until the game turns into a race between figures nobody can read: you one-shot everything or you get one-shot, nothing can die or you cannot die, and skill, technique, and strategy stop mattering, because you either have enough numbers or you do not. In Noir Insecticide the numbers do rise for both sides, but the challenge is skill. Getting farther demands spatial awareness, quick decisions, fast reactions, accurate aim, strong movement fundamentals and a deep understanding of your character, good timing with shifting and avoiding, and using the traps to your advantage. A win feels earned, a loss feels fair, and the game stays interesting past the point where other roguelikes turn into a numbers festival.
 2. **No progression between runs.** Nothing carries over. From the very first game, a player can win through skill alone.
