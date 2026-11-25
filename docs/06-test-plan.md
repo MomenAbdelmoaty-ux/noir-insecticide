@@ -30,17 +30,25 @@ A bug log in GitHub Issues with severity labels, Lighthouse performance and acce
 
 ## Documentation kept in step with the code
 
-The rulebook is updated whenever behavior changes, decision records are written when decisions are made, and a short daily log is kept for interviews.
+The rulebook is updated whenever behavior changes, decision records are written when decisions are made, and development logs are kept to showcase the entire process.
 
 ## Playtest feedback form
 
 Each playtester is sent the form with the first alpha version and asked:
 
-1. In your own words, what is the black and white rule?
-2. Where did you get stuck or confused?
-3. Did the horde feel too slow, about right, or overwhelming?
-4. Did shifting the background feel good or annoying?
-5. Were the controls comfortable? Did you open the settings menu?
-6. What is the one thing you would change?
+1. How did the weapons feel in combat?
+2. How did the abilities feel in traversal?
+3. Where did you get stuck or confused?
+4. Did the horde feel too slow, about right, or overwhelming? How did the enemies feel to fight against?
+5. Did shifting the background feel good or annoying?
+6. Did shifting the background ever feel necessary? 
+7. Did the game ever have any satisfying moments? Did you ever feel strong?
+8. How did the level/stage structure and shape feel?
+9. Did the enemy pathfinding feel buggy or unfair?
+10. How did the traps feel in terms of avoiding them? Were they unfair or barely an issue?
+11. How did the traps feel in terms of using them against the horde? Were they intuitive or useful?
+12. Were the controls comfortable? Did you open the settings menu?
+13. How did interactables feel when combined with the shifting mechanic and various weapons?
+14. What is the one thing you would change?
 
 When possible, one player is watched in person or on a call, without any help, and the places where they are confused are recorded.
