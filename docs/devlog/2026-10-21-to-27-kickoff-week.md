@@ -12,7 +12,6 @@ Build Noir Insecticide, a two-dimensional roguelike platformer with a black and 
 
 - **October 21 to 22:** scoped the project, chose the technology, and wrote down the core game design.
 - **October 23:** settled contradictions in my design notes and decided how enemies find their way (shared flow fields).
-- **October 24:** wrote the first setup and build guides.
 - **October 25:** renamed "phase" to "dimension" and added the rare Gray background and the overlap rule.
 - **October 26:** edited and updated various game mechanics and architecture decisions
 - **October 27:** added limited health and the reposition moment, and finished my tool setup and the first live page.
