@@ -25,7 +25,7 @@ Each use case is a player scenario with a pass condition and the requirements it
 | usecase-019 | Shift during the reposition moment | A shift during the freeze changes which spots are valid; the cooldown counts in real time | health-017, health-014 |
 | usecase-020 | Clip slightly into a platform | A shallow overlap moves the player to the nearest empty space with no damage | health-016 |
 | usecase-021 | Recover health by kills | Every X kills (quota divided by 10, rounded up) restores 1 health, and health never goes above the maximum of 7; trap kills count | health-018, health-013 |
-| usecase-022 | Lose footing after a shift | The player keeps momentum and falls with no coyote time; double jump remains | shifting-017 |
+| usecase-022 | Lose footing after a shift | The player keeps momentum and falls with no coyote time; double jump and the ability to wall jump remains | shifting-017 |
 | usecase-023 | Roll and scale stats | Rolled stats stay inside the weapon's range, and ranges scale by tier | loot-003, loot-004 |
 | usecase-024 | Planned after version 0.2.0: merge two weapons | Two same-tier weapons merge into one tier higher, with stats keeping their range position | loot-007 |
 | usecase-025 | Stuck bug corrects itself | A bug that cannot reach its next point enters the correcting state, flies through walls to it, still takes damage, and resumes | enemy-007 |
