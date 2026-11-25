@@ -2,7 +2,7 @@
 
 Each use case is a player scenario with a pass condition and the requirements it covers. Every use case is checked by at least one automated test or a written manual check. The requirement identifiers are defined in the software requirements document.
 
-| Identifier | Use case | Pass condition | Requirements |
+| Identifier | Use case | Acceptance Criteria | Requirements |
 |---|---|---|---|
 | usecase-001 | Traverse the level | The player runs, jumps (short hop and full jump), double jumps, crouches and fast falls, climbs ladders, slides down and jumps off walls, and reaches the door | movement-001 to movement-010 |
 | usecase-002 | Shift the background | Shifting works only on the button; intangible things stop interacting; the cooldown holds | shifting-001 to shifting-006 |
