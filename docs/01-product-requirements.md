@@ -9,7 +9,7 @@ Noir Insecticide is a two-dimensional roguelike platformer about decimating a ho
 1. **Difficulty comes from skill, not from numbers.** In most roguelikes, difficulty and weapon power both rise as numbers, until the game turns into a race between figures nobody can read: you one-shot everything or you get one-shot, nothing can die or you cannot die, and skill, technique, and strategy stop mattering, because you either have enough numbers or you do not. In Noir Insecticide the numbers do rise for both sides, but the challenge is skill. Getting farther demands spatial awareness, quick decisions, fast reactions, accurate aim, strong movement fundamentals and a deep understanding of your character, good timing with shifting and avoiding, and using the traps to your advantage. A win feels earned, a loss feels fair, and the game stays interesting past the point where other roguelikes turn into a numbers festival.
 2. **No progression between runs.** Nothing carries over. From the very first game, a player can win through skill alone.
 3. **Movement is integral, and the player chooses it.** Moving is fun in itself, and it is unique here because the player chooses which movement they have: every weapon ability is a movement tool first and foremost, with damage being secondary. The player carries two weapons, choosing their own combination of movement abilities.
-4. **A migration, not a loop in one place.** There is no standing in a circle and shooting. The player must keep traveling through a level whose areas each ask for something different (new terrain, new traps, new parkour, new arrangements of obstacles), so they are never in the same place doing the same thing over and over. The level evolves as you move, and the horde behind acts as a clock that creates real desperation without being boring.
+4. **A migration, not a loop in one place.** There is no standing in a circle and shooting. The player must keep traveling through a level whose areas each ask for something different (new terrain, new traps, new parkour, new arrangements of obstacles), so they are never in the same place doing the same thing over and over. The level evolves as you move, and the horde behind acts as a clock that creates real desperation without being boring. Levels are built from hand-made sections, each its own puzzle, joined from one section's exit to the next section's entrance.
 5. **Ideas the player has not seen elsewhere.** The black and white dimension rule and the trap system, in which traps can be re-armed and turned against the enemies, are new, distinctive, and fun.
 6. **Things keep their identity.** In many roguelikes with a large item pool, twenty minutes in you hold a hundred items, remember almost none of them, and just play while things happen. Every item loses its identity, intention disappears, and unique items and enemies stop mattering. Here the player carries at most two weapons, every power is either triggered on purpose or clearly visible, and every weapon, enemy, and trap is recognizable at a glance, so the player always knows what they have and uses it deliberately.
 7. **The swarm without the autopilot.** Horde games offer the satisfying fantasy of cutting down huge, unending crowds, usually by standing still while automatic attacks do the work. Here the fantasy is kept but must be earned: every attack is aimed and triggered by the player, and mass kills come from skill, such as lining up a piercing shot, placing a shotgun spread, dropping a boulder, or timing a shift. Power comes from reach and multiplicity (how many enemies one skilled action catches), not from bigger damage numbers, so the swarm stays satisfying and the game stays interactive. The rhythm is a ballad: a sustained process of surviving and maneuvering while killing steadily, interwoven with big moments of damage.
@@ -30,7 +30,7 @@ Primary: players who enjoy fast, skill-based roguelikes and precision platformer
 ## Goals
 
 1. Make a game where traversal, combat, and the black and white rule reinforce each other, so mastery looks like fast, confident movement.
-2. Ship a playable, deployed single-player first version (the minimum viable product, meaning the smallest complete thing worth releasing) by December 8, 2026, with one complete stage, and the complete project by January 17, 2027.
+2. Ship a playable, deployed single-player first version (the minimum viable product, meaning the smallest complete thing worth releasing) by December 8, 2026, with one complete stage, and version 0.2.0 (a complete stage with loot, traps, and the settings menu) by January 17, 2027.
 3. Keep the game fair and readable: the dimension rule must be understandable in about a minute, and every death should be explainable by the player.
 4. Make new content cheap: new weapons, enemies, traps, and levels arrive as data entries, not rewrites.
 5. Make the code trustworthy: a deterministic, headless simulation with unit, integration, end-to-end, and fuzz tests, a measured performance benchmark, and automatic checks on every change.
@@ -38,7 +38,7 @@ Primary: players who enjoy fast, skill-based roguelikes and precision platformer
 
 ## Non-goals for the first version and for version 0.2.0
 
-The Melee class and the Chain weapon, procedural level generation, special enemies (worms and mantis), bosses (including the final boss, the Queen), multiplayer, audio, impact frames, cutscenes, and swinging ropes.
+The Melee class and the Chain weapon, random assembly of sections into levels, special enemies (worms, mantis, Gray bugs, and the elite locusts, mosquitoes, and wasps), bosses (including the final boss, the Queen), multiplayer, audio, impact frames, cutscenes, and swinging ropes.
 
 Planned after version 0.2.0: special additions unlocked by weapon rarity, merging places, flavor text for each rarity, and animated weapon sprites (weapons are static single sprites in version 0.2.0). The data model for them is built in the loot core so they arrive later as data plus a few small behavior classes.
 
@@ -54,9 +54,11 @@ In:
 - The loot core: 15 tiers in five rarities, rolled stat ranges per weapon, weapons resting in the world, pickup and swap with E, a hover box with comparison numbers, and weapon icons with cooldown fills
 - The shift button, cooldown, dimensions, intangibility rules, refused-shift handling (with an advance warning on the shift icon), dotted outlines, overlapping Black and White geometry becoming Gray, and support for the rare Gray background in the rules, data, and tests (a secret area that uses it is optional)
 - Player projectiles that exist in both dimensions
-- One level authored in the Tiled editor, loaded as validated data, with an exit door, a kill quota, and at least three shift gates (obstacles that exist in only one color)
+- One level joined by hand from a few sections made in the Tiled editor (each a puzzle with one entrance, one exit, and spawn slots), loaded as validated data, with an exit door and a kill quota
+- Chests that drop loot, and special chests that open when a lever triggers them
+- A pause menu and an inventory screen that freeze the game so the player can read weapons and stats
 - A horde spawner with a time-based difficulty ramp, per-color spawn tables, and a cap on living enemies
-- Enemies: flyer, crawler, long-reach crawler, and Gray bugs
+- Enemies: flyer, crawler, and long-reach crawler
 - Traps: spikes, spinning saws, rope-and-boulder, tripwires and laser tripwires
 - Scripted moving platforms started automatically, by a timer, by an event, by a tripwire, or by a lever
 - The interact key (E) and attack-activated switches
@@ -89,3 +91,4 @@ Out: see the non-goals above.
 | Too many hand-written special cases | The scaffolding rules in the architecture document |
 | Movement scope grew | Movement gets two full days in the schedule |
 | Tier scaling compounds into a numbers festival | A per-stat scaling setting in data, enemy scaling, and an automatic balance test across all 15 tiers (progression-003) |
+| The full game (many sections, levels, and bosses) is a lot of content | Build it after version 0.2.0, from section and level data, and keep new levels cheap to add |
