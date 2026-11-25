@@ -1,16 +1,14 @@
-# Product requirements
+# Product Requirements
 
-A product requirements document says what you are building, for whom, and why, before saying how.
+## Introduction
 
-## Vision and the problems it solves
+Noir Insecticide is a two-dimensional roguelike platformer about decimating a horde before it gets a chance to decimate you. The player is the Exterminator, a vigilante-for-hire who must run, climb, and fight through large, elaborate rooms while an endless insect horde follows close behind them. The player kills enough bugs to reach a quota, unlocks a door at the edge of a dead end, and advances to a harder stage, or they die trying from the countless traps and the ever-growing swarm. The Exterminator must survive through several stages to reach the final boss, the Queen, and end the swarm once and for all.
 
-Noir Insecticide is a two-dimensional roguelike platformer about moving through danger faster than it can close in. The player is the Exterminator, a two-armed protagonist, who must run, climb, and fight through a very large level, many screens wide and tall, while an endless bug horde spawns behind them. The player kills enough bugs to reach a quota, unlocks a door at the end of a mostly single path, and advances to a harder stage, or is swarmed and dies. The game has an ending and a story reason for it: the Exterminator exists to end the endless horde, and the player wins the game by killing the Queen, the final boss and the source of the horde.
-
-**What this game is for**
+## Purpose / What sets it apart
 
 1. **Difficulty comes from skill, not from numbers.** In most roguelikes, difficulty and weapon power both rise as numbers, until the game turns into a race between figures nobody can read: you one-shot everything or you get one-shot, nothing can die or you cannot die, and skill, technique, and strategy stop mattering, because you either have enough numbers or you do not. In Noir Insecticide the numbers do rise for both sides, but the challenge is skill. Getting farther demands spatial awareness, quick decisions, fast reactions, accurate aim, strong movement fundamentals and a deep understanding of your character, good timing with shifting and avoiding, and using the traps to your advantage. A win feels earned, a loss feels fair, and the game stays interesting past the point where other roguelikes turn into a numbers festival.
 2. **No progression between runs.** Nothing carries over. From the very first game, a player can win through skill alone.
-3. **Movement is integral, and the player chooses it.** Moving is fun in itself, and it is unique here because the player chooses which movement they have: every weapon ability is a movement tool that also does damage, and the player carries two weapons.
+3. **Movement is integral, and the player chooses it.** Moving is fun in itself, and it is unique here because the player chooses which movement they have: every weapon ability is a movement tool first and foremost, with damage being secondary. The player carries two weapons, choosing their own combination of movement abilities.
 4. **A migration, not a loop in one place.** There is no standing in a circle and shooting. The player must keep traveling through a level whose areas each ask for something different (new terrain, new traps, new parkour, new arrangements of obstacles), so they are never in the same place doing the same thing over and over. The level evolves as you move, and the horde behind acts as a clock that creates real desperation without being boring. Levels are built from hand-made sections, each its own puzzle, joined from one section's exit to the next section's entrance.
 5. **Ideas the player has not seen elsewhere.** The black and white dimension rule and the trap system, in which traps can be re-armed and turned against the enemies, are new, distinctive, and fun.
 6. **Things keep their identity.** In many roguelikes with a large item pool, twenty minutes in you hold a hundred items, remember almost none of them, and just play while things happen. Every item loses its identity, intention disappears, and unique items and enemies stop mattering. Here the player carries at most two weapons, every power is either triggered on purpose or clearly visible, and every weapon, enemy, and trap is recognizable at a glance, so the player always knows what they have and uses it deliberately.
@@ -28,8 +26,6 @@ The player's own projectiles belong to both dimensions. They are visible on eith
 ## Audience
 
 Primary: players who enjoy fast, skill-based roguelikes and precision platformers, want movement mastery to matter, and are happy to fail quickly and retry. They need a game that loads fast in a browser, explains its one unusual rule in under a minute, and is fun in short sessions.
-
-Secondary: developers and designers who read the repository to see how the game is built: a data-driven design, a headless deterministic simulation, and documented decisions. They need clear documentation, a clean structure, and tests they can run.
 
 ## Goals
 
