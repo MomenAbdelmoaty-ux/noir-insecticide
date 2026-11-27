@@ -13,7 +13,7 @@ A fourth dimension is not added. Gray stays a merger of both colors, and player-
 
 ## Consequences
 
-From the player's point of view, a fourth thing would be the same as Gray in every way, so it would add something to remember and more clutter for no benefit. The rule table keeps three rows. This could be revisited later for a unique enemy, boss, or elite that matches the player's own interactivity. The small gap it leaves might also be filled by a special elite Gray enemy that flies and ignores walls and physics.
+From the player's point of view, a fourth thing would be the same as Gray in every way, so it would add something to remember and more clutter for no benefit. The rule table keeps three rows. This could be revisited later for a unique enemy, boss, or elite that matches the player's own interactivity. The small gap it leaves might also be filled by a special elite Gray enemy that flies and ignores walls and physics. Gray bugs are reserved for special bugs or elites after version 0.2.0, likely flying and ignoring walls and physics, since walking on every surface would often leave them stuck.
 
 ## Alternatives considered
 

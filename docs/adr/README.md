@@ -7,7 +7,7 @@ Each record states the context, the decision, the consequences, and the alternat
 | [decision-001](decision-001-use-phaser.md) | Phaser for drawing, not a custom engine | Accepted |
 | [decision-002](decision-002-use-planck-physics.md) | Planck.js for physics, inside the simulation package | Accepted |
 | [decision-003](decision-003-separate-simulation-from-drawing.md) | Simulation separate from drawing | Accepted |
-| [decision-004](decision-004-levels-as-data.md) | Levels as data | Accepted |
+| [decision-004](decision-004-levels-as-data.md) | Levels as data | Accepted (extended by decisions 045 and 046) |
 | [decision-005](decision-005-toggle-rules-as-strategies.md) | Toggle rules as swappable strategies | Superseded by decision-011 |
 | [decision-006](decision-006-dimension-rule-filters-and-predicate.md) | Dimension rule through collision filters plus one shared predicate | Accepted |
 | [decision-007](decision-007-flow-fields-pathfinding.md) | Pathfinding with shared flow fields | Accepted |
@@ -40,3 +40,16 @@ Each record states the context, the decision, the consequences, and the alternat
 | [decision-034](decision-034-stuck-bugs-correcting-state.md) | Stuck bugs enter a correcting state and fly straight to their next point | Accepted |
 | [decision-035](decision-035-pixels-per-game-unit.md) | One game unit is 32 pixels, and art is drawn at 64 | Accepted |
 | [decision-036](decision-036-hand-made-exported-art.md) | Art is hand-made in an editor and exported as single transparent images | Accepted |
+| [decision-037](decision-037-reposition-cursor-colors.md) | The reposition line and circle use the Gray outline pattern, with an X when invalid | Accepted |
+| [decision-038](decision-038-final-boss-the-queen.md) | The game ends with a final boss, the Queen | Accepted (planned after version 0.2.0) |
+| [decision-039](decision-039-chests-and-rarity-by-level.md) | Loot comes from chests, and rarity depends on the level | Accepted |
+| [decision-040](decision-040-menus-freeze-the-game.md) | Menus freeze the game by stopping the simulation | Accepted |
+| [decision-041](decision-041-weighted-platforms-and-breakable-blocks.md) | Weighted platforms and breakable blocks are special tiles | Accepted |
+| [decision-042](decision-042-bug-movement-no-collisions-random-speeds.md) | Bugs do not collide with each other, and their speeds vary | Accepted |
+| [decision-043](decision-043-horde-cap-quota-plus-flat-amount.md) | The horde cap is the quota plus a flat amount | Accepted |
+| [decision-044](decision-044-enemy-strength-resets-each-level.md) | Enemy strength resets each level, and difficulty comes mainly from variety | Accepted |
+| [decision-045](decision-045-levels-from-hand-made-sections.md) | Levels are assembled from hand-made sections | Accepted (extends decision-004) |
+| [decision-046](decision-046-spawn-slots-with-chances-and-groups.md) | Spawn slots with spawn chances and group limits | Accepted |
+| [decision-047](decision-047-two-dimensional-not-2-5d.md) | The game is two-dimensional, not 2.5D | Accepted |
+| [decision-048](decision-048-percentage-damage-to-bugs.md) | Traps and crushing deal a percentage of a bug's maximum health | Accepted |
+| [decision-049](decision-049-chest-screen.md) | Opening a chest shows a chest screen with three weapons to choose from | Accepted |

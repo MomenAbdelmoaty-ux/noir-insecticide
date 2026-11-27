@@ -9,7 +9,7 @@ Lost health needed a way back, and maximum health needed a rule. The way to rega
 
 ## Decision
 
-Maximum health is fixed at 7 and never grows. The player recovers 1 health point for every X kills, where X is the level's quota divided by 10, rounded up. Health never goes above 7. Kills made by traps count. The kill count keeps running at full health: every X kills trigger a recovery, and a recovery that happens at full health is lost.
+Maximum health is fixed at 7 and never grows. The player recovers 1 health point for every X kills, where X is the level's quota divided by 10, rounded up. Health never goes above 7. Kills made by traps count. The kill count keeps running at full health: every X kills trigger a recovery, and a recovery that happens at full health is lost. A boss stage has no quota, so recovery there is part of the boss fight design (decision-038), and the quota rule does not apply.
 
 ## Consequences
 

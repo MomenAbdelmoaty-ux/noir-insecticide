@@ -5,7 +5,7 @@
 | Layer | Tool | Scope | Target count |
 |---|---|---|---|
 | Unit | Vitest | Dimension rule truth table, including the Gray background, movement states, jump allowances, shift cooldown, damage, health recovery formula, clipping depth tiers, tier scaling and rolled stat ranges, pickup and swap rules, registry, data validation, random number determinism | 60 or more |
-| Integration | Vitest with the headless simulation | Scripted inputs over many ticks: refused shifts, damage and the reposition moment (including shifting during it), projectile phasing, horde scaling, world changes updating flow fields, a stuck bug correcting itself, trigger chains | 12 to 20 |
+| Integration | Vitest with the headless simulation | Scripted inputs over many ticks: refused shifts, damage and the reposition moment (including shifting during it), projectile phasing, horde scaling, world changes updating flow fields, a stuck bug correcting itself, a crushed bug taking percentage damage before it corrects, the chest screen freezing the game and dropping the chosen weapon, trigger chains | 12 to 20 |
 | Fuzz (random input) | Vitest | Random inputs for thousands of ticks: no not-a-number positions, nothing leaves the world, no crashes | A few |
 | Reachability | Vitest | Each section, made of both the Black and the White background, can be completed with shifting enabled, with the section's slots on or off | One per section |
 | Section loading | Vitest | A section has one entrance, one exit, the standard size, and valid slots | One per rule |

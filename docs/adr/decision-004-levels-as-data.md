@@ -1,6 +1,6 @@
 # decision-004: Levels as data
 
-**Status:** Accepted
+**Status:** Accepted (extended by decisions 045 and 046)
 **Date:** Before October 24, 2026
 
 ## Context
@@ -13,7 +13,7 @@ A level is a data object. Levels are drawn in the Tiled editor, and a loader con
 
 ## Consequences
 
-A future level generator emits the same format. A reachability checker can test that every level is completable under the dimension rules. Overlapping Black and White tiles are turned into Gray tiles by the loader (decision-016).
+A future level generator emits the same format. A reachability checker can test that every level is completable under the dimension rules. Overlapping Black and White tiles are turned into Gray tiles by the loader (decision-016). Levels are now assembled from hand-made sections with spawn slots (decisions 045 and 046). Tiled and validated data stay, and the level generator mentioned here arrives after version 0.2.0.
 
 ## Alternatives considered
 
