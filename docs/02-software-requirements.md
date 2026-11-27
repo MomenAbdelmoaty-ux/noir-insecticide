@@ -145,7 +145,7 @@ This lists functional requirements (what the game does) and quality requirements
 - **level-013** A section shall define spawn slots: authored locations where a trap, chest, lever, or other thing may appear. Each slot lists what may spawn there and the chance that it does, and may belong to a group that limits how many members exist at once (no limit for common things such as chests, and one at a time where only one should exist, such as the lever that opens a gate). Wherever a thing spawns, it shall be reachable, usable, and meaningful.
 - **level-014** Each level shall use only a subset of all sections, with a weight for each section set in level data, so later levels favor harder sections.
 - **level-015** (After version 0.2.0, unless a large library of sections exists sooner.) A level generator shall assemble a level from its allowed sections using the seeded random number generator, so the same seed gives the same level.
-- **level-016** Every section shall be completable on its own from both the Black and the White background, with its slots on or off, and the reachability checker shall check each section.
+- **level-016** Every section shall be completable on its own by shifting between the Black and White backgrounds, with its slots on or off, and the reachability checker shall check each section.
 - **level-017** A spawn slot shall add danger or reward and shall never remove the only path through a section, unless the thing is the section's intended gate.
 
 ### Traps, triggers, and platforms
