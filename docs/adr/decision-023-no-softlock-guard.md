@@ -13,7 +13,7 @@ There is no guard. If a guard were ever needed, something went terribly wrong el
 
 ## Consequences
 
-Levels must leave valid space near every place the player can be hit or crushed. The level checker or a future generator is the place to enforce that, so the game never hides a level mistake. The shallow-overlap nudge of decision-026 is mercy for slight clips and is not a guard for the reposition moment.
+Levels must leave valid space near every place the player can be hit or crushed. The level checker or a future generator is the place to enforce that, so the game never hides a level mistake. The shallow-overlap nudge of decision-026 is mercy for slight clips and is not a guard for the reposition moment. Level mistakes are caught for each section by the reachability checker (decision-045), so a bad section is found before it can be placed in a level.
 
 ## Alternatives considered
 

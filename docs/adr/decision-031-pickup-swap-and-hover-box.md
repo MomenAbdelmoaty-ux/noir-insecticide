@@ -13,7 +13,7 @@ E picks up a weapon within reach. An empty slot fills first; with both slots ful
 
 ## Consequences
 
-Reading a weapon mid-fight means moving the mouse off the aim, a deliberate cost that makes inspecting loot a quiet-moment action. Weapons in the world hover above the ground and feel only gravity.
+Reading a weapon mid-fight means moving the mouse off the aim, a deliberate cost that makes inspecting loot a quiet-moment action. Weapons in the world hover above the ground and feel only gravity. Held weapons can be read freely in the frozen inventory screen (decision-040), so only weapons on the ground need the mouse hover during play. Chests open with the same interact key and show the chest screen (decision-049), where offered weapons can be read and compared in the frozen game.
 
 ## Alternatives considered
 

@@ -9,7 +9,7 @@ A moving platform, a trap, or an object can squeeze the player against solid wor
 
 ## Decision
 
-While not immune, being deeply squeezed or clipped inside solid world objects deals 1 damage and starts the same reposition moment. The player is punished for being squashed and is given a way out. A shallow overlap is handled differently (decision-026).
+While not immune, being deeply squeezed or clipped inside solid world objects deals 1 damage and starts the same reposition moment. The player is punished for being squashed and is given a way out. A shallow overlap is handled differently (decision-026). This decision covers the player. Crushing damage to bugs is a percentage of their maximum health (decision-048).
 
 ## Consequences
 

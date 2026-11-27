@@ -13,7 +13,7 @@ There are 15 tiers, three per rarity: common, uncommon, rare, epic, and legendar
 
 ## Consequences
 
-A factor of 1.3 over 14 steps grows a stat about 39 times, so the balance test must cover all tiers. Loot ranges are data. The loot table across rooms is decided later. Flavor text per rarity comes late.
+A factor of 1.3 over 14 steps grows a stat about 39 times, so the balance test must cover all tiers. Loot ranges are data. The loot table across rooms is decided later. Flavor text per rarity comes late. Where weapons come from, and which tiers each level drops, is decided in decision-039. Legendary weapons do not drop from normal chests; they come from special chests in the top band and from merging.
 
 ## Alternatives considered
 
