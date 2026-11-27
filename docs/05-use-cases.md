@@ -13,15 +13,15 @@ Each use case is a player scenario with a pass condition and the requirements it
 | usecase-007 | Survive the horde | Enemies spawn, scale, respect the cap and color tables | enemy-001 to enemy-004 |
 | usecase-008 | Meet the quota and clear the stage | The door unlocks at the quota; reaching it shows a win | level-003 |
 | usecase-009 | Die and restart | Death shows the lose screen; restart resets the level | level-004 |
-| usecase-010 | Use a trap against enemies | A tripwire, lever, or shot rope hurts enemies | trap-003 to trap-006, interaction-001 to interaction-003 |
+| usecase-010 | Use a trap against enemies | A tripwire, lever, or shot rope hurts enemies, and bugs take a percentage of their maximum health | trap-003 to trap-006, trap-009, interaction-001 to interaction-003 |
 | usecase-011 | Ride a scripted platform | A platform moves by its script and starts by its trigger | trap-004 |
 | usecase-012 | Rebind a key | A changed binding works and survives a page reload | interface-002, interface-003 |
 | usecase-013 | Enemy attacks across dimensions | An intangible enemy's attack does no damage | shifting-010 |
 | usecase-014 | Take damage and reposition | Damage removes exactly 1 health, the game freezes and ramps to a stop, the player chooses a valid spot and teleports, time ramps back, and the player blinks with immunity for about 1 second | health-001 to health-010, health-014 |
 | usecase-015 | Get crushed | Being deeply squeezed by a platform or trap while not immune costs 1 health and starts the reposition moment | health-012 |
 | usecase-016 | Run out of health | Damage that reduces health to zero ends the run | health-011 |
-| usecase-017 | Pick up and swap a weapon | E fills an empty slot, swaps with the held weapon when both are full, and replaces a same-archetype weapon | loot-008, loot-009 |
-| usecase-018 | Read and compare a weapon | Hovering shows the box with name, tier, rarity color, stats, and comparison numbers against the held weapon | loot-001, loot-002, loot-010 |
+| usecase-017 | Pick up and swap a weapon | E fills an empty slot, swaps with the held weapon when both are full, and replaces a same-archetype weapon; a weapon chosen from a chest drops in front of the chest and is picked up the same way | loot-008, loot-009, loot-015 |
+| usecase-018 | Read and compare a weapon | Hovering shows the box with name, tier, rarity color, stats, and comparison numbers against the held weapon, or against both held weapons on the chest screen | loot-001, loot-002, loot-010 |
 | usecase-019 | Shift during the reposition moment | A shift during the freeze changes which spots are valid; the cooldown counts in real time | health-017, health-014 |
 | usecase-020 | Clip slightly into a platform | A shallow overlap moves the player to the nearest empty space with no damage | health-016 |
 | usecase-021 | Recover health by kills | Every X kills (quota divided by 10, rounded up) restores 1 health, and health never goes above the maximum of 7; trap kills count | health-018, health-013 |
@@ -29,3 +29,5 @@ Each use case is a player scenario with a pass condition and the requirements it
 | usecase-023 | Roll and scale stats | Rolled stats stay inside the weapon's range, and ranges scale by tier | loot-003, loot-004 |
 | usecase-024 | Planned after version 0.2.0: merge two weapons | Two same-tier weapons merge into one tier higher, with stats keeping their range position | loot-007 |
 | usecase-025 | Stuck bug corrects itself | A bug that cannot reach its next point enters the correcting state, flies through walls to it, still takes damage, and resumes | enemy-007 |
+| usecase-026 | Open a chest and choose a weapon | Opening a chest freezes the game and offers three weapons next to the inventory, each comparable with both held weapons; the chosen weapon drops on the ground in front of the chest and the other two are lost; leaving with the inventory key keeps the chest closed | loot-012, loot-015, interface-006, interface-007 |
+| usecase-027 | Crush a bug | A bug crushed in any way takes a percentage of its maximum health in damage before it corrects, and is immune to crush damage while correcting; elites and bosses are not affected | trap-008, trap-009, enemy-007 |
