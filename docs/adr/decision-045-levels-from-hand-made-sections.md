@@ -13,7 +13,7 @@ Each section is made by hand in Tiled, contains all its colors (Black, White, an
 
 ## Consequences
 
-Levels are easier to build, check, and test, and a level of good sections joined by rules is guaranteed to be completable. Each section is checked on its own, from both the Black and the White background, with its slots on or off. The flow fields work on the assembled grid, and can be limited to the sections near the player. Trigger identifiers are local to a section, so a section can appear twice. The main cost is authoring, and the library must be large enough that levels differ. Difficulty values are tuned from playtests and telemetry.
+Levels are easier to build, check, and test, and a level of good sections joined by rules is guaranteed to be completable. Each section is checked on its own by shifting between the Black and White backgrounds, with its slots on or off. The flow fields work on the assembled grid, and can be limited to the sections near the player. Trigger identifiers are local to a section, so a section can appear twice. The main cost is authoring, and the library must be large enough that levels differ. Difficulty values are tuned from playtests and telemetry.
 
 ## Alternatives considered
 
